@@ -1,6 +1,0 @@
-__pycache__/
-*.pyc
-*.zip
-.git/
-.env
-model_weight/

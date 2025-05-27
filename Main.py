@@ -13,7 +13,7 @@ templates = Jinja2Templates(directory=TEMPLATE_DIR)
 
 # 구글 드라이브에 있는 templates 경로 지정
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-ckpt = torch.load('/Users/sindongjun/AIOpsCICD/model.pkl',
+ckpt = torch.load('final_best_model_v2.pth',
                   map_location=DEVICE, weights_only=False)
 model = ckpt['model'].to(DEVICE)
 model.eval()
